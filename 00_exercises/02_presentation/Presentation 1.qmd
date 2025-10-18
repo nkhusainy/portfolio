@@ -1,0 +1,31 @@
+---
+title: "Presentation 1"
+format: revealjs
+editor: visual
+---
+
+## Hello, People!
+
+Kinansa Husainy
+
+ORCID: 0009-0004-8347-4371
+
+## Favorite Equation
+
+I would not say this is my *favorite* equation, per se... However, this did stick with me as Herbert told us to memorize this equation:
+
+$$
+f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}
+$$
+
+This is the general form of the probability density function of a **normal distribution**.
+
+## A little info...
+
+I do not have one favorite movie of all time. But I can compile a top 3, and those are:
+
+-   Pride and Prejudice (2005)
+
+-   Flipped (2010)
+
+-   Legally Blonde (2001)
