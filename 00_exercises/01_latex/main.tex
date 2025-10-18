@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{subcaption} % For organizing the plots from R into 1 figure
+
+\title{Exercise 1 MLARPIS}
+\author{Kinansa Husainy}
+\date{October 2025}
+
+\begin{document}
+
+
+\maketitle
+
+\section{Equation, Figures, and Tables}
+Back in our second semester, I remember in Bayesian Statistics course we were told to memorize the equation of normal distribution probability density function. We all tried to, in preparation for the exam. One semester later, I manage to completely forget it already, so I will add the equation as a reminder here.
+\begin{equation}
+f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}
+\end{equation}
+This is the general form of the probability density function of a normal distribution.
+\pagebreak
+
+\subsection{Figures}
+\begin{figure}[htbp]
+\centering
+% Row 1
+\begin{subfigure}[b]{0.45\textwidth}
+  \includegraphics[width=\textwidth]{histogram.png}
+  \caption{Histogram}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+  \includegraphics[width=\textwidth]{density.png}
+  \caption{Densityplot}
+\end{subfigure}
+
+\vspace{0.5cm}
+
+% Row 2
+\begin{subfigure}[b]{0.45\textwidth}
+  \includegraphics[width=\textwidth]{stripplot.png}
+  \caption{Stripplot}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+  \includegraphics[width=\textwidth]{boxplot.png}
+  \caption{Boxplot}
+\end{subfigure}
+
+\caption{Different plots of the same data, sometimes transformed.}
+\label{fig:allplots}
+\end{figure}
+\pagebreak
+
+\subsection{Table}
+\begin{table}[ht]
+\centering
+\caption{The same data, but now in a table. Only the first nine rows are displayed.}
+\label{table:data}
+\begin{tabular}{rrrrr}
+  \hline
+ & data & squared1 & squared2 & exponent \\ 
+  \hline
+1 & -0.56 & 0.31 & 0.31 & 0.57 \\ 
+  2 & -0.23 & 0.05 & 0.05 & 0.79 \\ 
+  3 & 1.56 & 2.43 & 2.43 & 4.75 \\ 
+  4 & 0.07 & 0.00 & 0.00 & 1.07 \\ 
+  5 & 0.13 & 0.02 & 0.02 & 1.14 \\ 
+  6 & 1.72 & 2.94 & 2.94 & 5.56 \\ 
+  7 & 0.46 & 0.21 & 0.21 & 1.59 \\ 
+  8 & -1.27 & 1.60 & 1.60 & 0.28 \\ 
+  9 & -0.69 & 0.47 & 0.47 & 0.50 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+\section{Fairytale}
+The Enchanted Garden and the Luminous Dove
+
+Once, in a land covered by mists and whispers, there lay an enchanting garden hidden behind a great stone wall. No one knew who had built the wall or why, but one thing was for certain – nobody had ever seen what was behind it.
+
+A little girl named Clara lived in a village nearby. Fueled by curiosity and tales of magical creatures, she often dreamt of the wonders that the walled garden might hold. One day, unable to resist its lure any longer, she decided to find a way in.
+
+As she approached the towering stone barrier, she noticed a tiny gap just big enough for her to peek through. The garden inside was bathed in a shimmering golden light, unlike any she had ever seen. To her amazement, in the center stood a magnificent tree with leaves that glittered as if they were made of starlight. And resting on one of its branches was a dove, glowing with the same luminous hue.
+
+Before she could process this beautiful sight, the dove spoke to her in a voice as soft as the wind, "To enter the garden, one must share a pure and selfless desire."
+
+Clara, with her heart pounding, whispered her wish, "I wish for everyone in my village to be happy and free from suffering."
+
+The massive stone door, seemingly of its own accord, began to open. The luminous dove flew to Clara and rested on her shoulder. "Your wish is genuine, and so you may enter," it said.
+
+Inside, the garden was more wondrous than Clara had ever imagined. Flowers sang in soft harmonies, and a gentle breeze carried the sweetest of fragrances. Every step she took made the grass shimmer with colors she'd never seen before.
+
+The dove explained that this was an Enchanted Garden, a place where one’s purest wishes could come true. But, there was a catch. To make her wish a reality, Clara had to plant a seed from the magical tree in her village and care for it with unwavering love and dedication.
+
+Clara accepted the challenge. With the seed safely tucked in her pocket and the dove guiding her, she returned to her village.
+
+Years went by, and with Clara's love, the seed grew into a magnificent tree, similar to the one in the Enchanted Garden. With its growth, joy and happiness blossomed in the village like never before.
+
+Clara's selfless wish not only transformed her village but also changed her. She became known as the Keeper of Joy, teaching future generations about love, compassion, and the magic of selfless wishes.
+
+And so, in a village once shadowed by mystery, there stood a tree that bore witness to the pure heart of a girl and her luminous companion, reminding everyone that magic was always just a wish away.
+\end{document}
