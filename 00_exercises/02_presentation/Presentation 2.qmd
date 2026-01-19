@@ -1,0 +1,128 @@
+---
+title: "Eternity (2025) movie"
+format: 
+  revealjs:
+    theme: simple
+    logo: images/uu-logo.png
+    slide-number: true
+bibliography: references.bib
+nocite: |
+  @laviedenans2025
+editor: visual
+---
+
+## Eternity (2025) movie
+
+![poster](https://upload.wikimedia.org/wikipedia/en/6/6b/Eternity_film_poster.jpg){fig-align="center"}
+
+I recently got into the movie Eternity, which is a fantasy romantic comedy film distributed by A24 (which is famous for other great movies).
+
+## Great pacing and structure
+
+![gif](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2RocWFjaGl5dmlmdHFqYW1zZjVubnkxc2U3ZGd6ajloa2Z5b3JuMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rKmWJ7xfH2APBINtq4/giphy.gif)
+
+The movie mainly tells about Joan, who has to pick which husband to spend an eternity with: Larry, her husband of 65 years with whom she had children and grandchildren with, or Luke, her first husband who died at war [@kroll2024]. This movie has a great pace and the actors delivered really great performance! I am team Larry all the way.
+
+## Awards
+
+Since it was just released, it has not yet won so many awards. The current accolades:
+
+```{r awards-table}
+library(DT)
+
+awards <- data.frame(
+  Award = c(
+    "Artios Awards",
+    "Critics' Choice Movie Awards",
+    "San Diego Film Critics Society",
+    "Savannah Film Festival",
+    "Savannah Film Festival",
+    "Society of Composers & Lyricists"
+  ),
+  `Date of Ceremony` = c(
+    "February 26, 2026",
+    "January 4, 2026",
+    "December 15, 2025",
+    "October 25, 2025",
+    "October 25, 2025",
+    "February 6, 2026"
+  ),
+  Category = c(
+    "Feature Studio or Independent - Comedy",
+    "Best Comedy",
+    "Best Comedic Performance",
+    "Distinguished Performance Award",
+    "Honored Guest",
+    "Outstanding Original Score for an Independent Film"
+  ),
+  `Recipients` = c(
+    "Tiffany Mak, Chelsea Ellis Bloch, and Marisol Roncal",
+    "Eternity",
+    "Da'Vine Joy Randolph",
+    "Miles Teller",
+    "Da'Vine Joy Randolph",
+    "David Fleming"
+  ),
+  Result = c(
+    "Pending",
+    "Nominated",
+    "Won",
+    "Won",
+    "Won",
+    "Pending"
+  ),
+  stringsAsFactors = FALSE
+)
+
+datatable(
+  awards,
+  options = list(
+    pageLength = 5,
+    scrollY = "300px",
+    scrollCollapse = TRUE
+  ),
+  rownames = FALSE
+)
+
+```
+
+## Honest Review
+
+::::: columns
+::: column
+Personally, I think the cinematography, color palettes, costume design are just so pleasing to the eyes. I love the warm and cold tones used to add layers to the story. The story is such a simple premise, yet they delivered. Team Larry from the get go, of course. He’s just so, so likeable.
+:::
+
+::: column
+From the start, I can see that while he’s not the dreamy, romantic man that says all the right things, he loves her very much. They’re just very different people. While Luke and Larry love Joan very deeply, one thing about Larry is just - he *gets* her.
+:::
+:::::
+
+## Movie Aside
+
+Some equations placeholder:
+
+$$
+f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}
+$$
+
+This is the general form of the probability density function of a **normal distribution**.
+
+## Some codes
+
+```{r}
+#| echo: true
+#| results: false
+#| message: false
+#| warning: false
+model <- lm(mpg ~ wt, data = mtcars)
+summary(model)
+```
+
+```{r figure1}
+#| include: false
+#| cache: true
+plot(mtcars$wt, mtcars$mpg)
+```
+
+## References
