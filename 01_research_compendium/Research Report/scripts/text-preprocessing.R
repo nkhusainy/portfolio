@@ -12,7 +12,6 @@ library(ggplot2)
 
 # Load data
 exam_data <- read_xlsx("../data/data.xlsx")
-
 set.seed(123)
 
 ## ============
