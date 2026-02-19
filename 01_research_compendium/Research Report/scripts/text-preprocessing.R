@@ -194,6 +194,10 @@ exam_cluster <- exam_processed %>%
     names_to = "stage",
     values_to = "response"
   ) %>%
+  mutate(
+    stage = gsub("_", " ", stage), # replace _ with space
+    stage = tools::toTitleCase(stage) # capitalize
+  )%>%
   group_by(question, stage, item_length_group2, response) %>%
   summarize(
     mean_score = mean(score, na.rm = TRUE),
